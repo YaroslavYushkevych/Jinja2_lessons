@@ -1,3 +1,5 @@
+#Studying the main features of {{ }} in the template generator
+
 from jinja2 import Template
 
 def temp_1(name = "Yaroslav", age = 22):
