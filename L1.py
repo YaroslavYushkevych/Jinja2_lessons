@@ -9,14 +9,14 @@ def temp_2(name = "Yaroslav", age = 22):
     return tm.render(n = name, a = age)
 
 def temp_6():
-    per = {'name': 'Yaroslav', 'age': 22}
-    tm = Template("I`m {{p.age}} old & my name {{p.name}}.")
-    return tm.render(p = per)
+    per_dict = {'name': 'Yaroslav', 'age': 22}
+    tm = Template("I`m {{pd.age}} old & my name {{pd.name}}.")
+    return tm.render(pd = per_dict)
 
 def temp_7():
-    per = {'name': 'Yaroslav', 'age': 22}
-    tm = Template("I`m {{p['age']}} old & my name {{p['name']}}.")
-    return tm.render(p = per)
+    per_dict = {'name': 'Yaroslav', 'age': 22}
+    tm = Template("I`m {{pd['age']}} old & my name {{pd['name']}}.")
+    return tm.render(pd = per_dict)
 
 class Person:
     def __init__(self, name, age):
@@ -54,8 +54,8 @@ tm = Template("I`m {{p.getAge()}} old & my name {{ p.getName() }}.")
 msg = tm.render(p=per)
 print("Temp_5: ", msg)
 
-#Use list for temp version 1
+#Use dictionary for temp version 1
 print("Temp_6: ", temp_6())
 
-#Use list for temp version 2
+#Use dictionary for temp version 2
 print("Temp_7: ", temp_7())
