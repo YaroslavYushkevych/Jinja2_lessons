@@ -1,0 +1,6 @@
+{% include 'header.htm' ignore missing %}
+{% include ['page1.htm', 'page2.htm'] ignore missing -%}
+{% import 'dialogs.htm' as dlg -%}
+Body page
+{{ dlg.dialog_1('Warning', 'It`s a text dialog') }}
+{% include 'footer.htm'  ignore missing %}
