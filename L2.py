@@ -93,26 +93,26 @@ def temp_5():
 
 # =====================================================================================
 # NO Escaping(екранування)
-print("Temp_1: ", temp_1())
+print("Example_1: ", temp_1())
 
 # Escaping {% raw %} … {% endraw %} (екранування)
-print("Temp_2: ", temp_2())
+print("Example_2: ", temp_2())
 
 """
 Для того що б вивести певну інформацію так як вона записана, а не так як її прочитає, наприклад, веб-сайт
 потрібно екранувати символи. Можна зробити це вручну, а можна за допомогою класу
 """
 # NO Escaping symbols(екранування символів)
-print("Temp_3_0:", temp_3_0())
+print("Example_3_0:", temp_3_0())
 
 # Escaping symbols(екранування символів)
-print("Temp_3_1: ", temp_3_1())
+print("Example_3_1: ", temp_3_1())
 
 # Escaping symbols of class (екранування символів за допомогою класу)
 # print("Temp_3_2: ", temp_3_2())
 
 # for
-print("Temp_4: ", temp_4())
+print("Example_4: ", temp_4())
 
 # if
-print("Temp_5: ", temp_5())
+print("Example_5: ", temp_5())

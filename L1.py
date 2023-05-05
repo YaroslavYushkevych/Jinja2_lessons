@@ -37,27 +37,27 @@ class Person:
 
 
 #Standart temp - like f-strings
-print("Temp_1: ", temp_1())
+print("Example_1: ", temp_1())
 
 #Temp & somthing operations method
-print("Temp_2: ", temp_2())
+print("Example_2: ", temp_2())
 
 #Temp & class method
 per = Person("Yaroslav", 22)
-print("Temp_3: ", per.temp_3())
+print("Example_3: ", per.temp_3())
 
 #OR other Temp & class method
 tm = Template("I`m {{ p.age }} old & my name {{ p.name }}.")
 msg = tm.render(p=per)
-print("Temp_4: ", msg)
+print("Example_4: ", msg)
 
 #Use getters & setters class method
 tm = Template("I`m {{p.getAge()}} old & my name {{ p.getName() }}.")
 msg = tm.render(p=per)
-print("Temp_5: ", msg)
+print("Example_5: ", msg)
 
 #Use dictionary for temp version 1
-print("Temp_6: ", temp_6())
+print("Example_6: ", temp_6())
 
 #Use dictionary for temp version 2
-print("Temp_7: ", temp_7())
+print("Example_7: ", temp_7())
